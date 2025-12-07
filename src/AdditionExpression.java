@@ -5,11 +5,11 @@ public class AdditionExpression extends CompoundExpression {
 
     @Override
     public double calculate() {
-        return super.getOp1().calculate() + super.getOp2().calculate();
+        return Math.round((super.getOp1().calculate() + super.getOp2().calculate()) * 10.0) / 10.0 ;
     }
 
     @Override
     public String toString() {
-        return "" + getOp1().toString() + " " + "+" + " " + getOp2().toString();
+        return "(" + getOp1().toString() + " " + "+" + " " + getOp2().toString() + ")";
     }
 }

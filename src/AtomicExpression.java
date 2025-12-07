@@ -7,7 +7,7 @@ public class AtomicExpression extends Expression {
 
     @Override
     public double calculate() {
-        return num;
+        return Math.round(num * 10.0) / 10.0;
     }
 
     @Override
